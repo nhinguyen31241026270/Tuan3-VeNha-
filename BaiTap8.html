@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes of JavaScript and HTML</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background-color: white;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 30px auto;
+            background-color: #cccccc;
+            padding: 40px;
+            min-height: 680px;
+        }
+
+        header {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .description {
+            background-color: gray;
+            color: white;
+            border: 2px solid white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 50px;
+            font-size: 16px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .heroes {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .hero-item {
+            width: 25%;
+            position: relative;
+        }
+
+        .hero-item h2 {
+            font-size: 17px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .hero-image {
+            height: 240px;
+            width: 100%;
+            border-radius: 15px;
+            background: linear-gradient(
+                135deg, #79a6c4, #dde6ec
+            );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 75px;
+            border: 2px solid white;
+        }
+
+        .hero-item:nth-child(2) .hero-image {
+            background: #e3dfd5;
+        }
+
+        .hero-item:nth-child(3) .hero-image {
+            background: #66c9c9;
+        }
+
+        .hero-item:nth-child(4) .hero-image {
+            background: #84a6a0;
+        }
+
+        .hero-description {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 190px;
+            padding: 12px;
+            border: 2px solid white;
+            background-color: rgba(90, 90, 90, 0.8);
+            color: white;
+            font-size: 14px;
+            line-height: 1.4;
+            z-index: 2;
+            overflow: hidden;
+        }
+
+        @media (max-width: 700px) {
+            .heroes {
+                flex-wrap: wrap;
+            }
+
+            .hero-item {
+                width: 45%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            Heroes of JavaScript and HTML
+        </header>
+
+        <div class="description">
+            Heroes of JavaScript and HTML is a
+            "Heroes of Might and Magic"-like game,
+            but for code nerds. Each hero has its
+            unique coding abilities and can develop
+            software applications.
+        </div>
+
+        <p class="intro">
+            Currently the game has only four hero types:
+        </p>
+
+        <div class="heroes">
+
+            <div class="hero-item">
+                <h2>Front-end Developer</h2>
+                <div class="hero-image">👨‍💻</div>
+                <div class="hero-description">
+                    Being the ultimate masters of
+                    JavaScript, the order of the
+                    Front-enders is known to create
+                    user interfaces that fill users
+                    with absolute pleasure.
+                </div>
+            </div>
+
+            <div class="hero-item">
+                <h2>Mobile Developer</h2>
+                <div class="hero-image">📱</div>
+                <div class="hero-description">
+                    The movement of the Mobile
+                    developers is brand new,
+                    yet in their short time they
+                    already manage to amaze people
+                    with their applications.
+                </div>
+            </div>
+
+            <div class="hero-item">
+                <h2>Web Developer</h2>
+                <div class="hero-image">🌐</div>
+                <div class="hero-description">
+                    The secret of the Web developers
+                    is the oldest there is.
+                    They prefer the old ways and
+                    rarely move to modern solutions.
+                </div>
+            </div>
+
+            <div class="hero-item">
+                <h2>QA Engineer</h2>
+                <div class="hero-image">🔍</div>
+                <div class="hero-description">
+                    The QAs are the designers of
+                    fates! They always have the
+                    final word, and all gods and
+                    mortals are bound to obey them.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

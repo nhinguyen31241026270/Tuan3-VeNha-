@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Layout</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        #wrapper {
+            width: 600px;
+            margin: 30px auto;
+            padding: 10px;
+            border: 3px solid black;
+            box-shadow: 5px 5px 10px gray;
+            box-sizing: border-box;
+        }
+
+        header {
+            height: 100px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .content {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            width: 25%;
+            height: 300px;
+            border: 2px solid black;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        main {
+            flex: 1;
+            height: 300px;
+            border: 2px solid black;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        footer {
+            height: 60px;
+            border: 2px solid black;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>header</header>
+
+        <div class="content">
+            <nav>nav</nav>
+            <main>main</main>
+        </div>
+
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
