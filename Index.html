@@ -91,6 +91,61 @@
                 grid-template-columns: 1fr;
             }
         }
+        
+.contact {
+    background-color: #f0f8f4;
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #176b5b;
+    font-size: 24px;
+    margin: 0 0 10px;
+    border: none;
+}
+
+.contact p {
+    color: #6b8078;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contact-list a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 150px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #dcebe4;
+    border-radius: 10px;
+    color: #176b5b;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-list a i {
+    font-size: 28px;
+}
+
+.contact-list a:hover {
+    background-color: #176b5b;
+    color: white;
+    transform: translateY(-4px);
+}
+
     </style>
 </head>
 
@@ -104,9 +159,27 @@
             <h1>NGUYỄN HOÀNG NHI</h1>
             <p>BÀI TẬP CSS CƠ BẢN</p>
         </header>
+  
+<section class="contact">
+    <h2>Thông tin liên hệ</h2>
+    <p>Kết nối và trao đổi thông tin</p>
+
+    <div class="contact-list">
+        <a href="https://github.com/nhinguyen31241026270/Tuan3-VeNha-" target="_blank"
+           rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+       <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nhinguyen.31241026270%40st.ueh.edu.vn"
+   target="_blank"
+   rel="noopener noreferrer">
+    <i class="fa-solid fa-envelope"></i>
+    <span>Email</span>
+</a>
+    </div>
+</section>
 
         <section class="info">
-            <h2>Thông tin sinh viên</h2>
+            <h2>Thông tin sinh viên</h2>            
             <p><strong>Họ tên:</strong> Nguyễn Hoàng Nhi</p>
             <p><strong>Trường:</strong> Đại học Kinh tế TP.HCM</p>
             <p><strong>Ngành:</strong> Thương mại điện tử</p>
@@ -126,16 +199,6 @@
                 <a href="BaiTap9.html">Bài tập 9 - Font Awesome</a>
             </div>
         </section>
-
-        <section class="info">
-            <h2>Liên kết cá nhân</h2>
-            <p>
-                <a href="https://github.com/" target="_blank">
-                    GitHub
-                </a>
-            </p>
-        </section>
-
         <footer>
             Nguyễn Hoàng Nhi - Bài tập CSS
         </footer>
